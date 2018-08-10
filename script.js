@@ -1,3 +1,15 @@
+var app;
+
+document.addEventListener("DOMContentLoaded", function() {
+  app = new Vue({
+    el: '#app',
+    data: {
+      message: 'Hello World!'
+    }
+  })
+})
+
+
 var gators = [
   {name: "Elvis Vessley",
     hobbies: "surfing, dancing",
