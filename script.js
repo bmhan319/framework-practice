@@ -1,3 +1,4 @@
+//moved variable app outside the event listener so that text can be changed in the console
 var app;
 
 document.addEventListener("DOMContentLoaded", function() {
