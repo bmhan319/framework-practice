@@ -1,16 +1,3 @@
-//moved variable app outside the event listener so that text can be changed in the console
-var app;
-
-document.addEventListener("DOMContentLoaded", function() {
-  app = new Vue({
-    el: '#app',
-    data: {
-      message: 'Hello World!'
-    }
-  })
-})
-
-
 var gators = [
   {name: "Elvis Vessley",
     hobbies: "surfing, dancing",
@@ -29,3 +16,15 @@ var gators = [
     imgSource: "http://www.vaguebuttrue.com/images/1449775760-alligatorclimbsfenceWEBSITE.jpg"
   }
 ]
+
+let profileListings;
+
+document.addEventListener("DOMContentLoaded", function() {
+  
+    profileListings = new Vue({
+    el: '#profileListings',
+    data: {
+      profiles: gators
+    }
+  })
+})
