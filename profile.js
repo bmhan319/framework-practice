@@ -25,8 +25,21 @@ document.addEventListener("DOMContentLoaded", function() {
     el: '#profileListings',
     data: {
       profiles: gators
+    },
+    methods: {
+      iceCreamFilter: function () {
+        if (this.iceCreamOnly) {
+        this.profiles = gators.filter(function(element){
+          return element.likesIceCream === true;
+        })
+        } else {
+        this.profiles = gators;
+        }
+      }
     }
   })
   
 })
+
+
 
